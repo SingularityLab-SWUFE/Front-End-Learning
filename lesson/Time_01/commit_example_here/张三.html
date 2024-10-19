@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello 张三</title>
+    <script>
+        //这是一个JS的注释（单行注释）
+        /* 这也是JS的注释
+        而且这是多行注释
+        */
+        //定义一个函数，当h1标签被点击时，会在控制台输出一句话，并且弹出一个对话框
+        function clickMe(){
+            console.log("Hello 张三!");   //在控制台输出一句话
+            alert("Hello 张三!"); //弹出一个对话框
+        }
+    </script>
+</head>
+<body>
+    <!-- 这是一个HTML的注释 -->
+    <!-- 在h1标签中，添加了一个onclick事件，当h1标签被点击时，会触发clickMe函数 -->
+    <!-- 在h1标签中，添加了一个class属性，这个属性的值是my-first-css，这个值对应了下面的CSS样式 -->
+    <!-- 在h1标签中,填入了显示的内容，为Hello SingularityLab! 该内容会显示在页面上，作为元素的content部分 -->
+    <h1 class="my-first-css" onclick="clickMe()" >Hello 张三!</h1>
+</body>
+<style>
+    /* 这是一个CSS的注释 */
+    /* 为h1标签设定样式，设定背景色以及盒子模型的各个部分：包括margin border padding 和content */
+    .my-first-css {
+        background-color: yellow;
+        margin: 50px 50px 50px 50px; /* 上 右 下 左 */
+        border: 10px solid black;
+        padding: 50px 50px 50px 50px; /* 上 右 下 左 */
+        color: red;
+        font-size: 50px;
+    }
+</style>
+</html>
