@@ -1,0 +1,172 @@
+<!-- html5基本骨架标签<html><head><title><meta><body> -->
+<!DOCTYPE html><!-- 声明 ，避免浏览器的怪异模式-->
+<html>
+	<head>
+		<meta charset="UTF-8"><!--单标签，描述文档网页属性，采用utf-8的编码格式-->
+		<title>我的网页</title><!--定义文档的标题-->
+	</head>
+	<body>
+		hello,我的第一个网页
+		<!-- h$*6 -->
+		<h1 align="left">一级标签</h1>
+		<h2 align="center">二级标签</h2>
+		<h3 align="right">三级标签</h3>
+		<h4>四级标签</h4>
+		<h5>五级标签</h5>
+		<h6>六级标签</h6>
+		    <!-- 段落<p>,换行<br />(单)，水平线<hr> -->
+			<p>&nbsp我是一个段落标签</p>
+			<p>如果不希望产生一个<br />新段落的情况下换行</p>
+			<hr color="yellow" width="400px" size="20px" >
+			<hr color="blue" width="400px" size="20px" align="left">
+			<hr color="blue" width="400px" size="20px" align="right">
+			<!-- 照片添加 -->
+			<img src="1.jpg" alt="猫咪看风景" width="300px" height="300px" title="猫" >
+			<!-- 超链接 -->
+			<a  target="_blank" href="https://www.163.com">网易</a>
+			<a href="https://baidu.com">
+				<img src="./1.jpg" alt=""width="100px">
+			</a>
+			<!-- 文本标签 -->
+			<p>白菜</p>
+			<em>em白菜</em>
+			<i>i白菜</i>
+			<b>b白菜</b>
+			<strong>strong白菜</strong>
+			<span>span白菜</span>
+			<del>del白菜</del>
+			<p>我喜欢吃<strong>白菜</strong></p>
+			<!-- 有序列表标签 -->
+			<ol type="a">
+				<li>水果</li>
+				<ol>
+					<li>苹果</li>
+					<li>香蕉</li>
+				</ol>
+				<li>蔬菜</li>
+				<ol>
+					<li>土豆</li>
+					<li>西红柿</li>
+				</ol>
+			</ol>
+			<!-- 无序列表标签 ，快捷键 ul>li*3 -->
+			<ul type="circle">
+				<li>水果</li>
+				<li>蔬菜</li>
+				<li>肉类</li>
+			</ul>
+			   <!-- 有导航的作用 -->
+			<ul>
+				<li>Xiaomi手机</li>
+				<li>Redmi手机</li>
+				<li>电视</li>
+			</ul>
+			<!--表格标签 ，快捷table>tr*3>td*4{单元格}-->
+			<table border="1" width="400px" height="200px">
+				<tr>
+					<th>姓名</th>
+					<th>年龄</th>
+					<th>爱好</th>
+					<th>性别</th>
+				</tr>
+				<tr>
+					<td>单元格</td>
+					<td>单元格</td>
+					<td>单元格</td>
+					<td>单元格</td>
+				</tr>
+				<tr>
+					<td>单元格</td>
+					<td>单元格</td>
+					<td>单元格</td>
+					<td>单元格</td>
+				</tr>
+				<tr>
+					<td>单元格</td>
+					<td>单元格</td>
+					<td>单元格</td>
+					<td>单元格</td>
+				</tr>
+			</table>
+			<!-- 表格单元格合并 以左上为基准 横合并colspan 纵合并rowspan-->
+			<table border="1">
+				<tr>
+					<td colspan="3">单元格1</td>
+					<td>单元格4</td>
+					<td>单元格5</td>
+				</tr>
+				<tr>
+					<td rowspan="3">单元格6</td>
+					<td>单元格7</td>
+					<td>单元格8</td>
+					<td>单元格9</td>
+					<td>单元格10</td>
+				</tr>
+				<tr>
+					<td>单元格12</td>
+					<td colspan="3" rowspan="3">单元格13</td>
+				</tr>
+				<tr>
+					<td>单元格17</td>
+				</tr>
+				<tr>
+					<td>单元格21</td>
+					<td>单元格22</td>
+				</tr>
+			</table>
+			<!-- form表单 -->
+			<form action="">
+				爱好：
+				篮球<input type="checkbox" value="篮球" name="爱好" >
+				足球<input type="checkbox" value="足球" name="爱好" >
+				乒乓球<input type="checkbox" value="乒乓球" name="爱好" >
+				性别：
+				男<input type="radio"  value="男" name="性别">
+				女<input type="radio" value="女"name="性别">
+				<br>
+				用户名：<input placeholder="输入你的用户名">
+				<br>
+				密码：<input placeholder="输入你的密码" type="password" >
+				<button>登录</button>
+				<br>
+				<textarea name="" id="" cols="" rows=""></textarea>
+				<br>
+				<select name="" id="" multiple>
+					<option value="">大一</option>
+					<option selected value="">大二</option>
+					<option value="">大三</option>
+					<option value="">大四</option>
+				</select><br>
+				<select name="年级" id="" >
+					<option value="2024">大一</option>
+					<option value="2023">大二</option>
+					<option value="2022">大三</option>
+					<option value="2021">大四</option>
+				</select><br>
+
+				<input type="submit" value="提交">
+				<input type="reset" value="重置"><br>
+				<input type="file" value="选择文件">
+			</form>
+			<!-- 老版本 -->
+			<div id="header"></div>
+			<div id="nav"></div>
+			<div id="article">
+				<div id="section"></div>
+			</div>
+			<div id="silder"></div>
+			<div id="footer"></div>
+			<!-- html5新增标签 -->
+			<header></header>
+			<nav></nav>
+			<article>
+				<section></section>
+			</article>
+			<aside></aside>
+			<footer></footer>
+
+
+			
+
+	</body>
+</html>
