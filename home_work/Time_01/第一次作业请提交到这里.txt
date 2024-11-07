@@ -1,0 +1,44 @@
+HTML基础笔记
+完整的html页面
+<!DOCTYPE html>
+<html>
+头部元素：
+    <head>
+    <meta charset="utf-8">
+    <title></title>
+    </head>
+可见的页面内容：
+    <body>
+    <h1></h1>
+    <p></p>
+    
+    
+    </body>
+<html>
+
+• <!DOCTYPE> 声明
+
+• HTML 标题
+HTML 标题（Heading）是通过 <h1> 到 <h6> 等标签进行定义的。
+<h1> 定义最重要的标题。 <h6> 定义不重要的标题:
+• HTML 段落
+HTML 段落是通过 <p> 标签来定义的。
+• HTML 链接
+HTML 链接是通过 <a> 标签来定义的。
+实例
+<a href="https://www.w3ccoo.com">这是一个链接</a>
+在 href 属性中指定链接的地址。
+• HTML 图像
+HTML 图像是通过 <img /> 标签进行定义的。自闭和标签。图片样式和文字同一等级，是行内元素。
+图像的名称和尺寸是以属性的形式提供的: (src), (alt), width, and height
+实例
+<img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+• 文字标签<span>
+• 块级元素<block>和行内元素<inline>，行内元素是在某一行文字满了之后才转行
+• <hr   />标签有下划线
+• <div>没有意义，只是为了将里面的内容包成一个块级元素，可以用于嵌套
+• <ol>有序列表，如1,2,3；a，b，c。
+• <ul>无序列表，默认前方这种小黑点
+• 表格<table>   <tr> 行  
+<td>单元格 可以在前面的标签里面加不同的属性<th>表格表头
+<a herf>超链接
