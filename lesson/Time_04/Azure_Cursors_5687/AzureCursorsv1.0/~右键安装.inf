@@ -1,0 +1,112 @@
+,................................................
+Azure Cursors v1.0 by Multiple Waters
+................................................
+*****        ****	****         ****
+**** *     * ****	****  ****   ****
+****  ****   ****	****  ****   ****
+****  ****   ****	****  ****   ****
+****  ****   ****	****  ****   ****
+****  ****   ****	****  ****   ****
+****  ****   ****	****  ****   ****
+****  ****   ****	**** *     * ****
+................................................
+....	     ....   ....   
+....	     ....   ....
+....	     ....   ....
+....	     ....   ....
+.... ..... ....   ....
+.... ..... ....   ....
+....	     ....   ....
+....	     ....   ....
+....	     ....   .... 
+,................................................
+
+
+[Version]
+signature="$CHICAGO$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur, Scheme.Txt, Scheme.Preview
+AddReg    = Scheme.Reg, Wreg
+
+[DestinationDirs]
+Scheme.Cur = 10,"%CUR_DIR%"
+Scheme.Txt = 10,"%CUR_DIR%"
+
+[Scheme.Reg]
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%working%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%precision%,%10%\%CUR_DIR%\%text%,%10%\%CUR_DIR%\%hand%,%10%\%CUR_DIR%\%unavailable%,%10%\%CUR_DIR%\%vert%,%10%\%CUR_DIR%\%horz%,%10%\%CUR_DIR%\%dgn1%,%10%\%CUR_DIR%\%dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%,%10%\%CUR_DIR%\%person%,%10%\%CUR_DIR%\%pin%"
+
+
+[Wreg]
+HKCU,"Control Panel\Cursors",,0x00020000,"%SCHEME_NAME%"
+HKCU,"Control Panel\Cursors",AppStarting,0x00020000,"%10%\%CUR_DIR%\%working%"
+HKCU,"Control Panel\Cursors",Arrow,0x00020000,"%10%\%CUR_DIR%\%pointer%"
+HKCU,"Control Panel\Cursors",crosshair,0x00020000,"%10%\%CUR_DIR%\%precision%"
+HKCU,"Control Panel\Cursors",precisionhair,0x00020000,"%10%\%CUR_DIR%\%precision%"
+HKCU,"Control Panel\Cursors",Hand,0x00020000,"%10%\%CUR_DIR%\%link%"
+HKCU,"Control Panel\Cursors",Help,0x00020000,"%10%\%CUR_DIR%\%help%"
+HKCU,"Control Panel\Cursors",IBeam,0x00020000,"%10%\%CUR_DIR%\%text%"
+HKCU,"Control Panel\Cursors",No,0x00020000,"%10%\%CUR_DIR%\%unavailable%"
+HKCU,"Control Panel\Cursors",NWPen,0x00020000,"%10%\%CUR_DIR%\%hand%"
+HKCU,"Control Panel\Cursors",SizeAll,0x00020000,"%10%\%CUR_DIR%\%move%"
+HKCU,"Control Panel\Cursors",SizeNESW,0x00020000,"%10%\%CUR_DIR%\%dgn2%"
+HKCU,"Control Panel\Cursors",SizeNS,0x00020000,"%10%\%CUR_DIR%\%vert%"
+HKCU,"Control Panel\Cursors",SizeNWSE,0x00020000,"%10%\%CUR_DIR%\%dgn1%"
+HKCU,"Control Panel\Cursors",SizeWE,0x00020000,"%10%\%CUR_DIR%\%horz%"
+HKCU,"Control Panel\Cursors",UpArrow,0x00020000,"%10%\%CUR_DIR%\%alternate%"
+HKCU,"Control Panel\Cursors",Wait,0x00020000,"%10%\%CUR_DIR%\%busy%"
+HKCU,"Control Panel\Cursors",Person,0x00020000,"%10%\%CUR_DIR%\%person%"
+HKCU,"Control Panel\Cursors",Pin,0x00020000,"%10%\%CUR_DIR%\%pin%"
+HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Runonce\Setup\","",,"rundll32.exe shell32.dll,Control_RunDLL main.cpl @0,1"
+
+
+
+
+
+[Scheme.Cur]
+"Azure v1.0 Normal Select.cur"
+"Azure v1.0 Help Select.cur"
+"Azure v1.0 Working In Background.ani"
+"Azure v1.0 Busy.ani"
+"Azure v1.0 Precision Select.cur"
+"Azure v1.0 Text Select.cur"
+"Azure v1.0 Handwriting.cur"
+"Azure v1.0 Unavailable.cur"
+"Azure v1.0 Vertical Resize.cur"
+"Azure v1.0 Horizontal Resize.cur"
+"Azure v1.0 Diagonal Resize 1.cur"
+"Azure v1.0 Diagonal Resize 2.cur"
+"Azure v1.0 Move.cur"
+"Azure v1.0 Alternate Select.cur"
+"Azure v1.0 Link Select.ani"
+"Azure v1.0 Location Select.cur"
+"Azure v1.0 Person Select.cur"
+"Bonus\Azure v1.0 Busy (Large).ani"
+"Bonus\Azure v1.0 Working In Background (Large).ani"
+"Bonus\Azure v1.0 Working In Background 2.ani"
+"Bonus\Azure v1.0 Working In Background 2 (Large).ani"
+"Bonus\Azure v1.0 Link Select (Large).ani"
+"Azure Cursors v1.0 Preview.png"
+
+; -- Directory structure of Azure v1.0 by Multiple Waters and Preview Image to be copied to C:\Windows\Cursors\Azure v1.0 by Multiple Waters
+
+[Strings]
+CUR_DIR      			= "Cursors\Azure v1.0 by Multiple Waters\Azure v1.0"
+SCHEME_NAME  			= "Azure v1.0"
+pointer				= "Azure v1.0 Normal Select.cur"
+help				= "Azure v1.0 Help Select.cur"
+working				= "Azure v1.0 Working In Background.ani"
+busy				= "Azure v1.0 Busy.ani"
+precision				= "Azure v1.0 Precision Select.cur"
+text				= "Azure v1.0 Text Select.cur"
+hand				= "Azure v1.0 Handwriting.cur"
+unavailable			= "Azure v1.0 Unavailable.cur"
+vert				= "Azure v1.0 Vertical Resize.cur"
+horz				= "Azure v1.0 Horizontal Resize.cur"
+dgn1				= "Azure v1.0 Diagonal Resize 1.cur"
+dgn2				= "Azure v1.0 Diagonal Resize 2.cur"
+move				= "Azure v1.0 Move.cur"
+alternate			= "Azure v1.0 Alternate Select.cur"
+link				= "Azure v1.0 Link Select.ani"
+person				= "Azure v1.0 Location Select.cur"
+pin				= "Azure v1.0 Person Select.cur"
